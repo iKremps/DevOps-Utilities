@@ -1,0 +1,10 @@
+{
+    "sourceDBConnectionString": "AccountEndpoint=https://patnerlinqdefaultdb.documents.azure.com:443/;AccountKey=TxDNkx3YqW0bGOipGy2tzMiyv51C2mzDp2y6cJtpNSk5ZIaAMOyTntQgqwM6FuKXdDeJrUwyJo81kQA7O9Glkw==;",
+    "sourceDBName": "db",
+
+    "destinationDBConnectionString": "AccountEndpoint=https://pod07-dev-mag-csdb.documents.azure.com:443/;AccountKey=VBjQ09XHl1hMB8faVqez84SqlTkn7UAmC2iNHWGkrcXFzeZlJ2zK55U9ewPv9tuP5Z2RtSZjisMsACDbJOwWtA==;database=db;",
+    "destinationDBName": "db",
+
+    "process_flow_adaptersOnly": false,
+    "containersForDataMigration": ["all"]
+}
