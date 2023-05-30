@@ -1,0 +1,207 @@
+{
+  "databaseName": "db",
+
+  "DbContainers": [
+    {
+      "containerName": "bre",
+      "partitionkey": "/bre_entity",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "bre",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "audit_history",
+      "partitionkey": "/entity_type",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "audit_history",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "cache",
+      "partitionkey": "/entity_type",
+      "defaultLoad": true,
+      "FetchDetails": [
+        {
+          "modelName": "cache",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+
+    },
+    {
+      "containerName": "configuration_data",
+      "partitionkey": "/entity_name",
+      "defaultLoad": true,
+      "enableTTL": false,
+      "FetchDetails": [
+        {
+          "modelName": "ErrorCode",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "extract_history",
+      "partitionkey": "/partnership_id",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "extract_history",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+
+    },
+    {
+      "containerName": "mq_configuration",
+      "partitionkey": "/entity_name",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "partnership",
+      "partitionkey": "/Company_Id",
+      "type": "int",
+      "defaultLoad": false,
+      "enableTTL":false,
+      "FetchDetails": [
+        {
+          "modelName": "partnership",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "process_flow",
+      "partitionkey": "/entity_name",
+      "defaultLoad": true,
+      "FetchDetails": [
+        {
+          "modelName": "processflow",
+          "dataQuery": "SELECT * FROM c where c.entity_name in ('adapters','flow' )",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "stage_data",
+      "partitionkey": "/Company_Id",
+      "type": "int",
+      "enableTTL": false,
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "stagedata",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "transaction_error",
+      "partitionkey": "/Company_Id",
+      "type": "int",
+      "enableTTL": false,
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "transaction_lookup",
+      "partitionkey": "/Company_Id",
+      "type": "int",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "user_setting",
+      "partitionkey": "/entity_type",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c where c.entity_type !='menu'",
+          "enableCrossPart": true
+        },
+        {
+          "modelName": "menu",
+          "dataQuery": "SELECT * FROM c where c.entity_type='menu'",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "utility_logs",
+      "partitionkey": "/SourceFolder"
+    }
+    ,
+    {
+      "containerName": "mdn_status",
+      "partitionkey": "/date",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    },
+    {
+      "containerName": "mdn_status_n",
+      "partitionkey": "/date",
+      "defaultLoad": false,
+      "FetchDetails": [
+        {
+          "modelName": "UserSettings",
+          "dataQuery": "SELECT * FROM c",
+          "enableCrossPart": true
+        }
+      ]
+    }
+
+    //{
+    //  "containerName": "InvoiceReport",
+    //  "partitionkey": "/CreatedDate"
+    //},
+    //{
+    //  "containerName": "mdn_status",
+    //  "partitionkey": "/date"
+    //},
+    //{
+    //  "containerName": "partnership_isa",
+    //  "partitionkey": "/PartitionKey"
+    //}
+  ]
+}
