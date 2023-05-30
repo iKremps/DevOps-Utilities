@@ -1,5 +1,5 @@
 # DevOps-Utilities
-Azure Function App scripts created that assist in DevOps tasks. Most of these scripts are called via POST request and require a JSON payload as input. Examples for these inputs can be found in the "Example-Payloads" folder.
+Azure Function App scripts created that assist in DevOps tasks. Some of these scripts are called via POST request and require a JSON payload as input. Examples for these inputs can be found in the "Example-Payloads" folder. If there is no example in the folder, it is because the function is either timer based, or only uses local.settings.json config data.
 
 General Overview of each script:
 
