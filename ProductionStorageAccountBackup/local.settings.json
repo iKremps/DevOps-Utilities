@@ -1,0 +1,23 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+        "APPINSIGHTS_INSTRUMENTATIONKEY": "75401120-462c-481c-96cb-668bb29dcdc8",
+
+        "CommonStorageConnetionString_POD01": "DefaultEndpointsProtocol=https;AccountName=pod01prdmfrsacct;AccountKey=XNkBW5GKWfVcil3sMHcg8pnDcINl+1HErZMy5SEFZVkIkRncPNsXXDvlBt0CpJsNOeA8MQvyWLMfsJCNlEi08Q==;EndpointSuffix=core.windows.net",
+        "CommonStorageConnetionString_POD02": "DefaultEndpointsProtocol=https;AccountName=pod02prdfrmsacct;AccountKey=3w+k1dkub8ymonb66VvfbXdvB63p9AgGtDDdwEcmKUYs1s+jN7+3BKVb+32LxM0KVyb2rK5FhvydlTEgpQVyJg==;EndpointSuffix=core.windows.net",
+        "CommonStorageConnetionString_POD03": "DefaultEndpointsProtocol=https;AccountName=pod03prdfrmsacct;AccountKey=LbZp4zbVoCVOSew/fPqVSDk8jy+U5kyXxpOxmkt+65zfl2ahaGt8T4W63+BPIfZYYscX2/rQQw7nHj6zN/X5Sw==;EndpointSuffix=core.windows.net",
+        "CommonStorageConnetionString_POD04": "DefaultEndpointsProtocol=https;AccountName=pod04prdfrmsacct;AccountKey=GGwJ0rgx6JT572dtD9kopDxGL15cx4ALc+85h5VscKJOkeU60lz4A7z8BnGcb0lcsCcnIgk0+OJH1t8CFCkwYQ==;EndpointSuffix=core.windows.net",
+        "CommonStorageConnetionString_POD05": "DefaultEndpointsProtocol=https;AccountName=pod05prdfrmsacct;AccountKey=GjghuWX5z4ES1M9yKol1tJfgwQH6gcloncIHMrn0hUQwjQ8ENV9Wbfl2FyJgZiJKGXNI91idSzGv+AStm8e8bw==;EndpointSuffix=core.windows.net",
+
+
+
+        //storage information regarding the destination of the uploads
+        "blobStorageDirectoryName": "cosmosbackups",
+        "blobStorageConnectionString": "DefaultEndpointsProtocol=https;AccountName=pldrbackupsacct;AccountKey=mfQJ0bv/9TEUv6liS8T3fo3cQF+QtdpxzZtZr2aMN3w40ztaGjiZwOklHB3gfH1WUX1ZLhSZV/Bp6fF2QFwbfg==;EndpointSuffix=core.windows.net"
+
+
+
+    }
+}
