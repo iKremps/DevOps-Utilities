@@ -1,0 +1,13 @@
+{
+    "sourceConnectionString": "AccountEndpoint=https://pod04-dev-vuori-csdb.documents.azure.com:443/;AccountKey=djo4LpYHD1jCahLtAaYNZM5MOSMTRwHoOl2VDVlP9xARSl34IT7YD1GYD6UpVF3hcVusZk18Uz1olZnhjMeEPA==;",
+    "sourceDBName": "db",
+
+    "destinationConnectionString": "AccountEndpoint=https://pod04-prd-vuori-csdb.documents.azure.com:443/;AccountKey=mqPhg1NjXmzJxkfk78G8pE8tSPmtM1H9yWRxOvIFjqZqORZTok6nhaRxvhDHALRAqUejXLYysy4dACDbiTvWPg==;",
+    "destinationDBName": "db",
+
+    "containersForMigration": ["configuration_data"],
+    "Company_id": "1",
+    "Company_code": "VUORI",
+    "EnvName": "DEV",
+    "PodName": "POD04"
+}
