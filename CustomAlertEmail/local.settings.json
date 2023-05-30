@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+        "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+
+
+        "SMTP": "smtp.office365.com", //neo-3.conectikan.com, neo-1.orderamazonprime.com,  neo-2.cartechnix.com, akoneseo.com, smtp.office365.com, stellar.allopsg.com, neo3.hendelin.com
+        "testUsername": "Visionnetprod@vuori.com", //smtpprov-uaabaibhc, mailclass-xwvLueAyPC@partnerlinq.net, smtpprov-xwvlueaypc, apikey
+        "Password": "uUeQeHA8YWQf", //Partnerlinq6506, D01BuB!s6H4@SsJJis3H8F!n, uUeQeHA8YWQf
+        "PortNumber": 587, //587
+        "EnableSsl": true
+    }
+}
