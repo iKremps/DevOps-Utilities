@@ -53,16 +53,6 @@ namespace CustomAlertEmail
                 };
 
                 mailMessage.To.Add("Ian.krempa@visionetsystems.com"); //email of recipient
-                mailMessage.To.Add("shayan.waliani@visionet.com"); //email of recipient
-                //mailMessage.To.Add("afzaal.javaid@visionet.com"); //email of recipient
-                //mailMessage.To.Add("muhammad.wasif@visionetsystems.com"); //email of recipient
-                //mailMessage.To.Add("junaid.israil@visionetsystems.com"); //email of recipient
-                //mailMessage.To.Add("mazhar.fareed@visionet.com"); //email of recipient
-                //mailMessage.To.Add("muhammad.mansoor@visionet.com"); //email of recipient
-                //mailMessage.To.Add("Muhammad.Mansoor@partnerlinq.net"); //email of recipient
-                //mailMessage.To.Add("shahmeer.sohail@visionet.com"); //email of recipient
-                //mailMessage.To.Add("anoosha.imambokhari@visionet.com"); //email of recipient
-                //mailMessage.To.Add("muhammad.shakeeel@visionet.com"); //email of recipient
                
 
                 smtpClient.Send(mailMessage);
