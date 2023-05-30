@@ -1,2 +1,2 @@
 # DevOps-Utilities
-Scripts created that assist in DevOps tasks
+Azure Function App scripts created that assist in DevOps tasks
